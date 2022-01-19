@@ -82,6 +82,7 @@ function averageWordLength(wordsArr) {
 function avg() {}
 
 // Iteration #5: Unique arrays
+
 const wordsUnique = [
   'crab',
   'poison',
@@ -96,7 +97,19 @@ const wordsUnique = [
   'bring'
 ];
 
-function uniquifyArray() {}
+function uniquifyArray(words) {
+
+  if(words.length === 0) return null;
+ 
+  let unify =[];
+
+  for(let i=0; i<words.length; i++){
+    if(unify.indexOf(words[i]) === -1 && words[i] !== ""){
+      unify.push(words[i]);
+  }
+}
+  return unify;
+}
 
 
 
@@ -115,11 +128,9 @@ function doesWordExist(arr, word) {
 return false
  }
 
+// Iteration #7: Count repetition 
+//Take the following array, remove the duplicates, and return a new array
 
-
-
-
-// Iteration #7: Count repetition
 const wordsCount = [
   'machine',
   'matter',
